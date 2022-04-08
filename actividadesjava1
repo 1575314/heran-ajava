@@ -1,0 +1,179 @@
+ 
+
+package br.generation.actividadesjava1; 
+
+  
+
+public class Animais1 { 
+
+	private String especie; 
+
+	private String nome; 
+
+	private int idade; 
+
+	 
+
+	public String getEspecie() { 
+
+		return especie; 
+
+	} 
+
+	public void setEspecie(String especie) { 
+
+		this.especie = especie; 
+
+	} 
+
+	 
+
+	public String getNome() { 
+
+		return nome; 
+
+	} 
+
+	public void setNome(String nome) { 
+
+		this.nome = nome; 
+
+	} 
+
+	 
+
+	public int getIdade() { 
+
+		return idade; 
+
+	} 
+
+	public void setIdade(int idade) { 
+
+		this.idade = idade; 
+
+	} 
+
+	 
+
+	void mostar() { 
+
+		System.out.println("Espécie: "+especie+" de nome: "+nome+ ", tem: "+idade+" anos de idade."); 
+
+} 
+
+ 
+
+package br.generation.actividadesjava1; 
+
+  
+
+public class cachorrinho extends Animais1  { 
+
+	 
+
+	private String Correr; 
+
+	 
+
+  
+
+	public String getCorrer() { 
+
+		return Correr; 
+
+	} 
+
+  
+
+	} 
+
+ 
+
+package br.generation.actividadesjava1; 
+
+  
+
+public class Cavalodetroya extends Animais1{ 
+
+	 
+
+	private String Cavalgar; 
+
+  
+
+	public String getCavalgar() { 
+
+		return Cavalgar; 
+
+	} 
+
+  
+
+	public void setCavalgar(String cavalgar) { 
+
+		Cavalgar = cavalgar; 
+
+	} 
+
+  
+
+  
+
+} 
+
+ 
+
+ 
+
+package br.generation.actividadesjava1; 
+
+  
+
+public class TestAnimais1 { 
+
+	 
+
+	public static void main(String[] args) { 
+
+	 
+
+cachorrinho an1 = new cachorrinho(); 
+
+Cavalodetroya an2 = new Cavalodetroya();	  
+
+  
+
+  
+
+  
+
+	an1.setEspecie("Cachorro"); 
+
+	an1.setNome("luna"); 
+
+	an1.setIdade(3); 
+
+	an1.setCorrer("Corre"); 
+
+	an1.mostrar(); 
+
+	an2.setEspecie("Cavalo"); 
+
+	an2.setNome("Max"); 
+
+	an2.setIdade(4); 
+
+	an2.setCavalgar("Cavalga"); 
+
+	an2.mostar(); 
+
+		 
+
+} 
+
+  
+
+} 
+
+ 
